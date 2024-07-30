@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura e altura do elemento */
+    font-family: "Overpass", sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}    
+
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza itens verticalmente */
+    align-items: center;   /* Centraliza horizontalmente todos os itens no container */
+    width: 100%;           /* Garante que o container use toda a largura disponível */
+    max-width: 350px;      /* Limita a largura máxima do container */
+    padding: 25px;
+    background: hsl(213, 19%, 18%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: left;      /* Alinha texto e SVG à esquerda */
+    width: 100%;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+.header h1{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.header p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.form-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens do formulário verticalmente */
+    align-items: center;   /* Centraliza os itens do formulário horizontalmente */
+    width: 100%;           /* Garante que o formulário use toda a largura disponível */
+}
+
+.rating {
+    display: flex;
+    gap: 15px; /* Espaço entre os itens do rating */
+    margin-bottom: 20px;
+    
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    background-color: hsl(216, 19%, 26%);
+    border: 2px solid hsl(215,18%,19%);
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rating input[type="radio"]:checked + label {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+    color: hsl(213, 19%, 18%);
+}
+.rating input[type="radio"]:hover + label{
+    background-color: hsl(25, 97%, 53%);
+    border-color: hsl(25, 97%, 53%);
+    color: hsl(213, 19%, 18%);
+}
+button {
+    padding: 10px 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    
+}
